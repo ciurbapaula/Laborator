@@ -1,0 +1,38 @@
+body{
+	background-color: #F2F2F2;
+	 position: relative;
+
+}
+p{
+	color:brown;
+}
+
+#principalhead{
+	height: 2cm;
+    background-color:#F2F2F2 ;
+    min-width: : 100%;
+   position: relative;
+}
+#pisi1{
+	height:300px ; width: 600px; float: left;padding:20px;
+}
+#pisi2{
+	height:300px ; width: 600px; margin:20px;
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: content; }
+.item3 { grid-area: pozaunu; }
+.item4 { grid-area: pozadoi}
+.item5 { grid-area: footer}
+
+.grid-container {
+  
+  grid-template-areas:
+    '.header  header.'
+    'content content '
+    'pozaunu   pozadoi '
+    '.footer footer.'
+;
+grid-gap: 10px;
+}
+

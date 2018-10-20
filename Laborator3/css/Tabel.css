@@ -1,0 +1,18 @@
+
+table, td {
+    border: 1px solid grey;
+    background-color: #F5F5F5;
+     border-radius: 4px;
+     -moz-box-shadow: 2px 7px 8px rgba(0, 0, 0,0.5);*/
+    -webkit-box-shadow: 2px 7px 8px rgba(0, 0, 0, .5);
+    box-shadow: 2px 7px 8px rgba(0, 0, 0, .5);
+}
+table{
+ margin-left: auto;
+    margin-right: auto;
+     width: 300px;
+     height: 250px;
+}
+th{  border: 1px solid grey;
+
+}
