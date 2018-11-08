@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex1 </title>
+</head>
+<body>
+
+
+ <script>
+     // reverse number
+ 
+    let nr;   //12345;
+ 	function reverseNr(nr){
+ 		nr=nr+"";
+         let theSplit=nr.split("");
+         let revArray=theSplit.reverse();
+         let joinArray=revArray.join('');
+         return joinArray;
+    
+ 	}
+ 	
+ 	console.log(reverseNr(12345));
+
+
+     //reverse string 
+    let str;
+ 	function reverseString(str){
+         let theSplit=str.toString().split("");
+         let revArray=theSplit.reverse();
+         let joinArray=revArray.join("");
+         return joinArray;
+    
+ 	}
+ 	
+ 	console.log(reverseString("asdfg"));
+
+
+ </script>
+
+
+</body>
+</html>

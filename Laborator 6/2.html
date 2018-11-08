@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex2</title>
+</head>
+<body>
+
+
+<script>
+	 //reverse string 
+    let str;
+    let position;
+ 	function removeChar(str,position){
+         let theRemove=str.substring(0,position);
+          let remove2 = str.substring(position + 1, str.length);
+          return (theRemove+remove2);
+    
+ 	}
+ 	
+ 	console.log(removeChar('String',0));
+ 	console.log(removeChar('String',4));
+ 	
+	
+
+
+</script>
+
+</body>
+</html>

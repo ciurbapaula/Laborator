@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex6</title>
+</head>
+<body>
+
+	<script>
+		
+	    let obj = new Object();
+		let property;
+		function checkProp(obj, property){
+			if (obj.hasOwnProperty(property))
+			{
+			  return true;
+			}
+
+			else 
+			{
+			  return false;
+			}
+		}
+	console.log(checkProp({red: "red", green: "green", white: "white"}, "green"));
+	console.log(checkProp({red: "red", green: "green", white: "white"}, "black"));
+	
+
+	</script>
+
+</body>
+</html>

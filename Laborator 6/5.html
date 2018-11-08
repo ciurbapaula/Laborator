@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex5</title>
+</head>
+<body>
+<script>
+	
+
+	let arr = [] ;
+  
+   
+    function sum(arr){
+             let s=0;
+            for (let i = 0; i < arr.length; i++) {
+            	if(isNaN(arr[i])){
+            	s+=arr[i];
+               continue;
+                 }
+
+		       s+=arr[i];        
+             }
+     return s;
+    }
+    console.log(sum([1,2,3]));
+    console.log(sum([1,2,'a',3]));
+    console.log(sum(['asd']));
+
+
+
+</script>
+</body>
+</html>
