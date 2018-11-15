@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>ex4</title>
+    </header>
+    <body>
+            <script>
+                //ES5
+               function Animal( type){
+                  this.type=type;
+                  var color;
+                  this.getColor=function(color){ _color=color;}
+                  
+
+                } 
+                function Fish(){
+                  
+                  var fishType;
+                  this.getFishType=function(fishType){ _fishType=fishType;}
+                  
+
+                }
+                function Dog(){
+                  
+                  var dogType;
+                  this.getDogType=function(dogType){ _dogType=dogType;}
+                  
+
+                }
+                function DogType(typeName){
+                  this.typeName=typeName;
+                  var furColor;
+                  this.getfurColor=function(furColor){ _furColor=furColor;}
+                  
+
+                }
+                Fish.prototype=Object.create(Animal.prototype);
+                var fish= new Fish();
+                fish.getColor="grey"
+                fish.type="fish";
+                fish.getFishType="crab";
+                console.log("Animal: "+fish.type ,",type:" +fish.getFishType, ",color:"+fish.getColor);
+              
+                Dog.prototype=Object.create(Animal.prototype);
+                var dog= new Dog();
+                dog.getColor="black"
+                dog.type="dog";
+                dog.getDogType="Cane corso";
+                console.log("Animal: "+dog.type ,",type:" +dog.getDogType, ",color:"+dog.getColor);
+
+                DogType.prototype=Object.create(Dog.prototype);
+                var dog2= new DogType();
+                dog2.typeName="Labrador"
+                dog2.type="dog";
+                dog2.getFurColor="white";
+                dog.getColor="white"
+                dog.getDogType="Labrador";
+                console.log("Animal: "+dog2.type ,",type:" +dog2.typeName, ",color:"+dog2.getFurColor);
+
+
+
+
+                
+               
+
+            </script>
+           
+    </body>
+
+
+
+
+</html>

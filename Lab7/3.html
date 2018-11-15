@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>ex3</title>
+    </header>
+    <body>
+            <script>
+               try{
+                   var fin=(function(){
+                       throw new Error('example')}())
+                   setTimeout(fin,1000);
+               }
+               catch(err){
+                   console.error(err);
+                  
+
+
+               }
+            </script>
+           
+    </body>
+
+
+
+
+</html>
